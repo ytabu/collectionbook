@@ -60,3 +60,33 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#add 2019/04/23
+gem 'annotate'            # 現状のスキーマの注釈をコメントとしてファイルの上部や下部に追記してくれる。
+gem 'better_errors'       # エラー画面をデバッグしやすい形に整形してくれる
+gem 'binding_of_caller'   # better-errorsのエラー画面でirbができる
+gem 'bullet'              # 「N+1 問題」を検出してくれる
+gem 'hirb'                # コンソールのModelの出力結果を表形式で分かりやすく表示する
+gem 'hirb-unicode'        # 日本語などマルチバイト文字の出力時の出力結果のずれに対応
+gem 'letter_opener_web'   # 送信したメールを確認できる
+gem 'pry-rails'           # コンソールをirbからpryに置き換える。
+gem 'pry-byebug'          # ソースコードにブレークポイントを埋め込んで、所定のポイントでpryを起動
+#gem 'quiet_assets'        # developmentログへのアセットパイプライン関連のログ出力を抑制
+
+#add Rspec
+group :development do
+  gem 'spring-commands-rspec'
+end
+
+group :test do
+#  gem 'capybara'
+  gem 'capybara-email'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'poltergeist'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+end
+
+#add bootstrap
+gem 'bootstrap'
