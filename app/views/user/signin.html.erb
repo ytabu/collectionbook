@@ -1,0 +1,28 @@
+<div class="container container-main bg-light d-flex align-items-center text-center">
+<%= form_tag("/user/login") do %>
+<div class="form-signin mx-auto">
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <h1 class="h3 mb-3 font-weight-normal">ログイン</h1>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <label for="inputEmail" class="sr-only">メールアドレス</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="メールアドレス" required autofocus value="testuser@test.com">
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="パスワード" required  value="PASS">
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </div>
+    </div>
+</div>
+<% end %>
+</div>

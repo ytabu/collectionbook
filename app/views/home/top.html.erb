@@ -1,24 +1,22 @@
 
-<div class="jumbotron jumbotron-fluid jumbotron-top">
+<div class="jumbotron-top jumbotron jumbotron-fluid">
   <div class="container-top">
-    <div class="content-top">
-        <h1 class="col-md-12 display-4 text-center">CollectionBook</h1>
-        <p class="col-md-12 lead text-center">あなたのコレクションを披露ください</p>
+
+    <div class="row align-items-center" style="height:50%">
+      <div class="col">
+        <h1 class="display-4 text-center">CollectionBook</h1>
+        <p class="lead text-center">コレクション共有サイト</p>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-3 offset-sm-3">
+        <%= link_to("会員登録",{:controller =>"user",:action =>"signup"},:class => "btn btn-warning") %>
+      </div>
+      <div class="col-sm-3">
+        <%= link_to("ログイン",{:controller =>"user",:action =>"signin"},:class => "btn btn-warning") %>
+      </div>
+    </div>
+
   </div>
 </div>
-<div class="container center-block">
-    <div class="row">
-        <button type="button" class="col-xs-6 btn btn-warning ml-auto d-block">新規登録</button>
-        <button type="button" class="col-xs-6 btn btn-warning mr-auto d-block">ログイン</button>
-    </div>
-</div>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-link">Link</button>
